@@ -25,10 +25,19 @@
 <main>
     <h1>Projectos</h1>
     <div class="projectos">
-    
+        <div class = "imagens">
             {#each $projectImages as pic}
             <img src={"https://5s5if3lu.directus.app/assets/" + pic} alt="">
             {/each}
-        
+        </div>
     </div>
 </main>
+
+<style>
+     .imagens {
+        height: 300px;
+        width: 300px;
+        display: flex;
+     }
+
+</style>
